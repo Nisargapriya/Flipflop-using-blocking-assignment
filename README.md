@@ -163,7 +163,6 @@ else
 end
 endmodule
 ### T Flip-Flop Test bench 
-`timescale 1ns/1ps
 module t_ff_tb;
 reg T,rst,clk;
 wire Q;
