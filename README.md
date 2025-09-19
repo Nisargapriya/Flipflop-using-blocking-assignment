@@ -25,6 +25,7 @@ Blocking assignments execute sequentially in the given order, which makes it eas
 ---
 
 ## VERILOG CODE
+```
 module sr_ff(s,r,clk,rst,q);
 input s,r,clk,rst;
 output reg q;
@@ -89,11 +90,13 @@ S=1;R=1;
 $finish;
 end
 endmodule
+```
 #### SIMULATION OUTPUT
 
 <img width="1208" height="600" alt="image" src="https://github.com/user-attachments/assets/ae1b940b-500e-4d6c-98a0-9c1f1bc7727d" />
 
 ### JK Flip-Flop (Blocking)
+```
 module jk_ff(J,K,clk,rst,Q);
 input J,K,clk,rst;
 output reg Q;
@@ -112,7 +115,9 @@ else
     end
 end
 endmodule
+```
 ### JK Flip-Flop Test bench 
+```
 module jk_ff_tb;
 reg J,K,clk,rst;
 wire Q;
@@ -135,10 +140,12 @@ J=1;K=1;
 $finish;
 end
 endmodule
+```
 #### SIMULATION OUTPUT
 <img width="1201" height="600" alt="image" src="https://github.com/user-attachments/assets/bf0b2051-d40d-4839-97c4-0f65cdc462c4" />
 
 ### D Flip-Flop (Blocking)
+```
 module d_ff(D,clk,rst,Q);
 input D,clk,rst;
 output reg Q;
@@ -165,11 +172,12 @@ D=1;#20;
 $finish;
 end
 endmodule
-
+```
 #### SIMULATION OUTPUT
 <img width="1200" height="583" alt="image" src="https://github.com/user-attachments/assets/4ed1c32b-311b-407c-956c-13a809a2d29f" />
 
 ### T Flip-Flop (Blocking)
+```
 module t_ff(T,clk,rst,Q);
 input T,clk,rst;
 output reg Q;
@@ -198,6 +206,7 @@ T=1; #10;
 $finish;
 end
 endmodule
+```
 #### SIMULATION OUTPUT
 <img width="1207" height="559" alt="image" src="https://github.com/user-attachments/assets/32acc9c7-f2b3-4b93-9cca-5a436e2bd716" />
 
