@@ -25,22 +25,21 @@ Blocking assignments execute sequentially in the given order, which makes it eas
 ---
 
 ## VERILOG CODE
-module sr_ff(S,R,clk,rst,Q);
-input S,R,clk,rst;
-output reg Q;
-always @(posedge clk)
+module sr_ff(s,r,clk,rst,q);
+input s,r,clk,rst;
+output reg q;
+always@(posedge clk)
 begin
 if (rst==1)
-    Q=0;
-else    
-    begin
-        case({S,R})
-            2'b00: Q= Q;
-            2'b01: Q= 1'b0;
-            2'b10: Q= 1'b1;
-            2'b11: Q= 1'bX;
-        endcase
-     end
+q=1'b0;
+else if (s==0 && r==0)
+q=q;
+else if (s==0 && r==1)
+q=1'b0;
+else if (s==1 && r==0)
+q=1'b1;
+else
+q=1'bx;
 end
 endmodule
 SR Flip-Flop Test bench
