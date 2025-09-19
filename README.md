@@ -43,6 +43,30 @@ else
      end
 end
 endmodule
+SR Flip-Flop Test bench
+`timescale 1ns/1ps
+module sr_ff_tb;
+reg S,R,clk,rst;
+wire Q;
+sr_ff uut(S,R,clk,rst,Q);
+always #5 clk = ~clk;
+initial
+begin
+clk=0;S=0;R=0;rst=1;
+#10;
+rst=0;
+#10;
+S=0;R=0;
+#10;
+S=0;R=1;
+#10;
+S=1;R=0;
+#10;
+S=1;R=1;
+#10;
+$finish;
+end
+endmodule
 ### SR Flip-Flop (Blocking)
 module sr_ff_tb;
 reg S,R,clk,rst;
