@@ -44,6 +44,7 @@ module sr_ff (
 endmodule
 ```
 ### SR Flip-Flop Test bench 
+```verilog
 module sr_ff_tb;
     reg S, R, clk;
     wire Q;
@@ -73,11 +74,13 @@ module sr_ff_tb;
         $finish;
     end
 endmodule
+```
 #### SIMULATION OUTPUT
 
 <img width="1645" height="825" alt="image" src="https://github.com/user-attachments/assets/c8b3ea71-5196-460b-9be8-934310a7a763" />
 
 ### JK Flip-Flop (Blocking)
+```verilog
 module jk_ff (
     input wire J, K, clk,
     output reg Q
@@ -93,7 +96,9 @@ module jk_ff (
         endcase
     end
 endmodule
+```
 ### JK Flip-Flop Test bench 
+```verilog
 module jk_ff_tb;
     reg J, K, clk;
     wire Q;
@@ -124,10 +129,12 @@ module jk_ff_tb;
         $finish;
     end
 endmodule
+```
 #### SIMULATION OUTPUT
 <img width="1636" height="894" alt="image" src="https://github.com/user-attachments/assets/e72c0df3-49ae-4874-bbe7-2d4b323ef8ea" />
 
 ### D Flip-Flop (Blocking)
+```verilog
 module d_ff (
     input wire d, clk,
     output reg Q
@@ -136,7 +143,9 @@ module d_ff (
         Q <= d;
     end
 endmodule
+```
 ### D Flip-Flop Test bench 
+```verilog
 module d_ff_tb;
     reg d, clk;
     wire Q;
@@ -164,10 +173,12 @@ module d_ff_tb;
         $finish;
     end
 endmodule
+```
 #### SIMULATION OUTPUT
 <img width="1615" height="896" alt="image" src="https://github.com/user-attachments/assets/96b21bef-6d87-40ae-b4a9-efffef94f43b" />
 
 ### T Flip-Flop (Blocking)
+```verilog
 module t_ff (
     input wire T, clk,
     output reg Q
@@ -182,7 +193,9 @@ module t_ff (
             Q <= Q;
     end
 endmodule
+```
 ### T Flip-Flop Test bench 
+```verilog
 module t_ff_tb;
     reg T, clk;
     wire Q;
@@ -210,6 +223,7 @@ module t_ff_tb;
         $finish;
     end
 endmodule
+```
 #### SIMULATION OUTPUT
 
 <img width="1413" height="899" alt="image" src="https://github.com/user-attachments/assets/70fb0e4f-0757-4bc7-9f2f-fca1b0eb6940" />
