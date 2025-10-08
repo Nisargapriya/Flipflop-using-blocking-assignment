@@ -27,6 +27,7 @@ Blocking assignments execute sequentially in the given order, which makes it eas
 ## VERILOG CODE
 
 ### SR Flip-Flop (Blocking)
+```verilog
 module sr_ff (
     input wire S, R, clk,
     output reg Q
@@ -41,6 +42,7 @@ module sr_ff (
         endcase
     end
 endmodule
+```
 ### SR Flip-Flop Test bench 
 module sr_ff_tb;
     reg S, R, clk;
