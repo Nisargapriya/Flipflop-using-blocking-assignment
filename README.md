@@ -1,4 +1,4 @@
-# EXPERIMENT 3: Simulation of All Flip-Flops using Blocking Statement
+Flops using Blocking Statement
 
 ## AIM
 To design and simulate basic flip-flops (SR, D, JK, and T) using **blocking statements** in Verilog HDL, and verify their functionality through simulation in Vivado 2023.1.
@@ -74,6 +74,7 @@ end
 endmodule
 ```
 #### SIMULATION OUTPUT
+<img width="1420" height="794" alt="image" src="https://github.com/user-attachments/assets/ad845bc9-df6f-440b-938e-b119fcda93af" />
 
 ### JK Flip-Flop (Blocking)
 ```verilog
@@ -121,6 +122,7 @@ endmodule
 ```
 #### SIMULATION OUTPUT
 
+<img width="1414" height="809" alt="image" src="https://github.com/user-attachments/assets/9463d2fa-af7c-432c-9bb8-f7acbc48a07b" />
 
 ### D Flip-Flop (Blocking)
 ```verilog
@@ -160,6 +162,8 @@ endmodule
 ```
 #### SIMULATION OUTPUT
 
+<img width="1290" height="780" alt="image" src="https://github.com/user-attachments/assets/799e5a54-3d20-456e-acba-59bcd87b3d2c" />
+
 
 ### T Flip-Flop (Blocking)
 ```verilog
@@ -194,6 +198,7 @@ endmodule
 
 ```
 #### SIMULATION OUTPUT
+<img width="1418" height="787" alt="image" src="https://github.com/user-attachments/assets/559ca546-cc42-475e-bdf9-30500517b0fd" />
 
 
 
